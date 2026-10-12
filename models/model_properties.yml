@@ -1,0 +1,7 @@
+models:
+ - name: department
+   config:
+     materialized: 'view'
+ - name: employee_dept_eng
+   config:
+     materialized: 'view'
