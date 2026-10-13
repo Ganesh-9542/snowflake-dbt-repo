@@ -1,7 +1,19 @@
+
+
 models:
  - name: department
    config:
      materialized: 'view'
  - name: employee_dept_eng
    config:
-     materialized: 'view'
+     materialized: 'table'
+
+sources:
+  - name: siva
+    database: DBT_DATABASE
+    schema: RAW
+    tables:
+      - name: EMP
+        description: 'This table contains employees related information'
+      - name: DEPT
+        description: 'This table contains department related information'

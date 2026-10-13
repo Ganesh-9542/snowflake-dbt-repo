@@ -1,4 +1,5 @@
 
+{{config(materialized = 'view',schema = 'raw')}}
 
 select 
    first_name,
