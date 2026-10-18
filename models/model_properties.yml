@@ -17,3 +17,10 @@ sources:
         description: 'This table contains employees related information'
       - name: DEPT
         description: 'This table contains department related information'
+
+  - name: Ganesh
+    database : DBT_DATABASE
+    schema: DBT_STAGE 
+    tables :
+      - name: emp_stg
+        description : 'this is table is created for scd implementation'
